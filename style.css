@@ -125,6 +125,50 @@ footer div {
   width: 224px;
 }
 
+.modal {
+  margin-top: 120px;
+  padding: 30px 40px;
+  width:685px;
+  height:365px;
+  border-radius: 10px;
+  background-color: white;
+  border: 8px solid #22daa8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.modal h2 {
+  color: #22daa8;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.modal p {
+  font-size: 24px;
+}
+.modal a {
+  height: 85px;
+  width:100%;
+  padding: 10px 20px;
+  background-color: #EC5632;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
 @media (max-width: 1024px) {
   body {
     background-image: url("./imgs/MoviesBG2x.png");

@@ -68,4 +68,31 @@ document.addEventListener("DOMContentLoaded", function () {
             movie.addEventListener("click", showOptions3);
         });
     });
+
+    const modal = document.getElementById("modal");
+    const whiteBox = document.getElementById("white-box");
+    modal.style.display = "none";
+    const modalButton = document.getElementById("modal-button");
+
+    // Imágenes en options-3
+    const movies3 = options3.querySelectorAll(".movie");
+    movies3.forEach((movie) => {
+        movie.addEventListener("click", () => {
+            options3.style.display = "none"; // Oculta options-3
+            modal.style.display = "flex";
+            title.style.display = "none";
+            whiteBox.style.display = "none";
+            // Configura el enlace del botón según la película seleccionada
+            if (movie.src.includes('image7')) {
+                modalButton.href = "https://www.imdb.com/title/tt1877830/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_batman";
+
+            } else if (movie.src.includes('image8')) {
+                modalButton.href = "https://www.imdb.com/title/tt10872600/?ref_=nv_sr_srsg_1_tt_8_nm_0_in_0_q_spiderman%2520home";
+
+            } else if (movie.src.includes('image9')) {
+                modalButton.href = "https://www.imdb.com/title/tt3107288/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_flash";
+
+            }
+        });
+    });
 });
