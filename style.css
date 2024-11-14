@@ -94,7 +94,6 @@ h1 {
     animation: fadeIn 1s ease-out forwards;
 }
 
-/* Definir la animación fade-in */
 @keyframes fadeIn {
     0% {
         opacity: 0;
